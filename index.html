@@ -9,7 +9,7 @@
     <meta name="keywords" content="Movierulz, iPhone 18 online booking, iPhone 15 price, iPhone 16 price, iPhone 17 price, MoveRules Loot, Telegram loot alerts">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="min-h-screen bg-gray-50 text-gray-800 flex flex-col justify-between scroll-smooth">
+<body class="min-h-screen bg-gray-50 text-gray-800 flex flex-col justify-between">
 
     <div>
         <!-- Header -->
@@ -152,50 +152,36 @@
 
             </div>
 
-            <!-- AdSense Compliance Content Sections -->
-            <div class="space-y-4 mb-6">
-                <!-- About Us Section -->
-                <section id="about" class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-xs text-gray-600 space-y-2">
-                    <h3 class="font-bold text-gray-800 text-sm">About Us</h3>
-                    <p>Welcome to <strong>MoveRules Loot</strong>, your ultimate destination for verified online shopping loot deals, price glitch alerts, and exclusive tech discounts. We also provide early-bird pre-orders such as the much-awaited <strong>iPhone 18 online booking</strong>.</p>
-                    <p>Our mission is to bring real-time price drops, festive discount alerts, and trusted e-commerce loot offers directly to our community members via our official Telegram channel.</p>
-                </section>
-
-                <!-- Privacy Policy Section -->
-                <section id="privacy" class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-xs text-gray-600 space-y-2">
-                    <h3 class="font-bold text-gray-800 text-sm">Privacy Policy</h3>
-                    <p>At MoveRules Loot, accessible from moveruleslootz.vercel.app, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by MoveRules Loot and how we use it.</p>
-                    <p>We use third-party advertising companies (like Google AdSense) to serve ads when you visit our website. These companies may use information about your visits in order to provide advertisements about goods and services of interest to you.</p>
-                </section>
-
-                <!-- Terms & Conditions Section -->
-                <section id="terms" class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-xs text-gray-600 space-y-2">
-                    <h3 class="font-bold text-gray-800 text-sm">Terms & Conditions</h3>
-                    <p>By accessing this website, we assume you accept these terms and conditions. Do not continue to use MoveRules Loot if you do not agree to all of the terms and conditions stated on this page.</p>
-                    <p>All deals, glitch prices, and pre-order slots are subject to availability from respective e-commerce platforms. Prices can fluctuate dynamically without prior notice.</p>
-                </section>
-
-                <!-- Copyright Disclaimer Section -->
-                <section id="copyright" class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-xs text-gray-600 space-y-2">
-                    <h3 class="font-bold text-gray-800 text-sm">Copyright Disclaimer</h3>
-                    <p>MoveRules Loot respects the intellectual property rights of others. All product names, logos, brands, and trademarks are property of their respective owners. All company, product and service names used in this website are for identification purposes only.</p>
-                </section>
-            </div>
+            <!-- SEO FAQs Section for AdSense Approval -->
+            <section class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-xs text-gray-700 space-y-3 mb-6">
+                <h3 class="font-bold text-gray-900 text-sm mb-2">Frequently Asked Questions (FAQs)</h3>
+                
+                <div class="space-y-2">
+                    <p><strong>Q1: How can I do iPhone 18 online booking?</strong><br>
+                    Ans: You can pre-order and complete your iPhone 18 online booking through our verified Telegram loot updates channel to get early-bird offers and discounted glitch prices.</p>
+                    
+                    <p><strong>Q2: Where to find genuine iPhone loot deals?</strong><br>
+                    Ans: MoveRules Loot provides real-time alerts for iPhone 15, iPhone 16, iPhone 17, and upcoming flagship models at heavy discounts directly shared on our Telegram channel.</p>
+                    
+                    <p><strong>Q3: Are these iPhone prices and glitch deals real?</strong><br>
+                    Ans: Yes! Price drops and flash sale glitches occur dynamically on e-commerce platforms. We instantly notify our community members before stocks run out.</p>
+                </div>
+            </section>
 
         </main>
     </div>
 
-    <!-- Footer with AdSense Compliance Links & Copyright -->
-    <footer id="contact" class="bg-gray-900 text-gray-400 py-6 px-4 text-xs">
+    <!-- Footer with AdSense Compliance Popup Modals -->
+    <footer class="bg-gray-900 text-gray-400 py-6 px-4 text-xs">
         <div class="max-w-xl mx-auto space-y-3 text-center">
             
             <!-- Quick Links -->
             <div class="flex flex-wrap justify-center gap-4 text-gray-300 font-medium text-[11px]">
-                <a href="#about" class="hover:underline">About Us</a>
+                <button onclick="openModal('aboutModal')" class="hover:underline focus:outline-none">About Us</button>
                 <a href="mailto:pavanibevara045@gmail.com" class="hover:underline">Contact Us</a>
-                <a href="#privacy" class="hover:underline">Privacy Policy</a>
-                <a href="#terms" class="hover:underline">Terms & Conditions</a>
-                <a href="#copyright" class="hover:underline">Copyright Disclaimer</a>
+                <button onclick="openModal('privacyModal')" class="hover:underline focus:outline-none">Privacy Policy</button>
+                <button onclick="openModal('termsModal')" class="hover:underline focus:outline-none">Terms & Conditions</button>
+                <button onclick="openModal('copyrightModal')" class="hover:underline focus:outline-none">Copyright Disclaimer</button>
             </div>
 
             <p class="text-[10px] text-gray-500 leading-relaxed">
@@ -208,6 +194,48 @@
         </div>
     </footer>
 
+    <!-- Modals for Policies (Hidden by default, shown ONLY on click) -->
+    <div id="aboutModal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center p-4 z-50">
+        <div class="bg-white text-gray-800 p-5 rounded-2xl max-w-sm w-full space-y-3 shadow-xl text-left text-xs">
+            <h3 class="font-bold text-sm text-gray-900">About Us</h3>
+            <p>Welcome to MoveRules Loot, your ultimate destination for verified online shopping loot deals, price glitch alerts, and exclusive tech discounts. We also provide early-bird pre-orders such as iPhone 18 online booking.</p>
+            <button onclick="closeModal('aboutModal')" class="w-full bg-blue-600 text-white py-2 rounded-xl font-medium mt-2">Close</button>
+        </div>
+    </div>
+
+    <div id="privacyModal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center p-4 z-50">
+        <div class="bg-white text-gray-800 p-5 rounded-2xl max-w-sm w-full space-y-3 shadow-xl text-left text-xs">
+            <h3 class="font-bold text-sm text-gray-900">Privacy Policy</h3>
+            <p>At MoveRules Loot, your privacy is our main priority. We use third-party advertising companies like Google AdSense to serve ads when you visit our website.</p>
+            <button onclick="closeModal('privacyModal')" class="w-full bg-blue-600 text-white py-2 rounded-xl font-medium mt-2">Close</button>
+        </div>
+    </div>
+
+    <div id="termsModal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center p-4 z-50">
+        <div class="bg-white text-gray-800 p-5 rounded-2xl max-w-sm w-full space-y-3 shadow-xl text-left text-xs">
+            <h3 class="font-bold text-sm text-gray-900">Terms & Conditions</h3>
+            <p>By accessing this website, you accept our terms and conditions. All deals and glitch prices are subject to stock availability from e-commerce platforms.</p>
+            <button onclick="closeModal('termsModal')" class="w-full bg-blue-600 text-white py-2 rounded-xl font-medium mt-2">Close</button>
+        </div>
+    </div>
+
+    <div id="copyrightModal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center p-4 z-50">
+        <div class="bg-white text-gray-800 p-5 rounded-2xl max-w-sm w-full space-y-3 shadow-xl text-left text-xs">
+            <h3 class="font-bold text-sm text-gray-900">Copyright Disclaimer</h3>
+            <p>MoveRules Loot respects intellectual property rights. All brand names and product images belong to their respective owners and are used for identification purposes only.</p>
+            <button onclick="closeModal('copyrightModal')" class="w-full bg-blue-600 text-white py-2 rounded-xl font-medium mt-2">Close</button>
+        </div>
+    </div>
+
+    <!-- JavaScript for Modal Popup Control -->
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).classList.remove('hidden');
+        }
+        function closeModal(modalId) {
+            document.getElementById(modalId).classList.add('hidden');
+        }
+    </script>
+
 </body>
 </html>
-p
