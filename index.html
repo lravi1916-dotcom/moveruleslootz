@@ -152,24 +152,42 @@
 
             </div>
 
-            <!-- Professional SEO FAQs Section -->
+            <!-- Professional Clickable Accordion FAQs Section -->
             <section class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-xs text-gray-700 space-y-3 mb-6">
                 <h3 class="font-bold text-gray-900 text-sm pb-1 border-b border-gray-100">Frequently Asked Questions (FAQs)</h3>
                 
-                <div class="space-y-3">
-                    <div>
-                        <h4 class="font-bold text-gray-800">Q1: How can I secure my iPhone 18 online booking?</h4>
-                        <p class="text-gray-600 mt-0.5">You can register and complete your iPhone 18 online booking securely through our verified Telegram channel notifications to get early access and special launch discounts.</p>
+                <div class="space-y-2">
+                    <!-- FAQ 1 -->
+                    <div class="border border-gray-100 rounded-lg overflow-hidden">
+                        <button onclick="toggleFaq('faq1')" class="w-full text-left font-bold text-gray-800 p-2.5 bg-gray-50 flex justify-between items-center focus:outline-none">
+                            <span>Q1: How can I secure my iPhone 18 online booking?</span>
+                            <span id="icon1" class="text-blue-600 font-bold">+</span>
+                        </button>
+                        <div id="faq1" class="hidden p-2.5 text-gray-600 bg-white border-t border-gray-100">
+                            You can register and complete your iPhone 18 online booking securely through our verified Telegram channel notifications to get early access and special launch discounts.
+                        </div>
                     </div>
-                    
-                    <div>
-                        <h4 class="font-bold text-gray-800">Q2: What are iPhone loot deals and price glitches?</h4>
-                        <p class="text-gray-600 mt-0.5">iPhone loot deals refer to massive flash sale price drops and inventory pricing glitches on premium models like iPhone 15, 16, and 17, shared instantly via our alerts.</p>
+
+                    <!-- FAQ 2 -->
+                    <div class="border border-gray-100 rounded-lg overflow-hidden">
+                        <button onclick="toggleFaq('faq2')" class="w-full text-left font-bold text-gray-800 p-2.5 bg-gray-50 flex justify-between items-center focus:outline-none">
+                            <span>Q2: What are iPhone loot deals and price glitches?</span>
+                            <span id="icon2" class="text-blue-600 font-bold">+</span>
+                        </button>
+                        <div id="faq2" class="hidden p-2.5 text-gray-600 bg-white border-t border-gray-100">
+                            iPhone loot deals refer to massive flash sale price drops and inventory pricing glitches on premium models like iPhone 15, 16, and 17, shared instantly via our alerts.
+                        </div>
                     </div>
-                    
-                    <div>
-                        <h4 class="font-bold text-gray-800">Q3: How do I get instant notifications for stock updates?</h4>
-                        <p class="text-gray-600 mt-0.5">Join our official Telegram community linked above to receive real-time alerts milliseconds before stocks sell out during major e-commerce sales.</p>
+
+                    <!-- FAQ 3 -->
+                    <div class="border border-gray-100 rounded-lg overflow-hidden">
+                        <button onclick="toggleFaq('faq3')" class="w-full text-left font-bold text-gray-800 p-2.5 bg-gray-50 flex justify-between items-center focus:outline-none">
+                            <span>Q3: How do I get instant notifications for stock updates?</span>
+                            <span id="icon3" class="text-blue-600 font-bold">+</span>
+                        </button>
+                        <div id="faq3" class="hidden p-2.5 text-gray-600 bg-white border-t border-gray-100">
+                            Join our official Telegram community linked above to receive real-time alerts milliseconds before stocks sell out during major e-commerce sales.
+                        </div>
                     </div>
                 </div>
             </section>
@@ -233,13 +251,25 @@
         </div>
     </div>
 
-    <!-- JavaScript for Modal Popup Control -->
+    <!-- JavaScript for Modals & Interactive Accordion FAQs -->
     <script>
         function openModal(modalId) {
             document.getElementById(modalId).classList.remove('hidden');
         }
         function closeModal(modalId) {
             document.getElementById(modalId).classList.add('hidden');
+        }
+
+        function toggleFaq(faqId) {
+            const content = document.getElementById(faqId);
+            const icon = document.getElementById('icon' + faqId.replace('faq', ''));
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.innerText = '-';
+            } else {
+                content.classList.add('hidden');
+                icon.innerText = '+';
+            }
         }
     </script>
 
