@@ -152,43 +152,64 @@
 
             </div>
 
-            <!-- Professional Clickable Accordion FAQs Section -->
+            <!-- Professional Click-to-Expand FAQs Section (6-7 FAQs) -->
             <section class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-xs text-gray-700 space-y-3 mb-6">
                 <h3 class="font-bold text-gray-900 text-sm pb-1 border-b border-gray-100">Frequently Asked Questions (FAQs)</h3>
                 
                 <div class="space-y-2">
                     <!-- FAQ 1 -->
-                    <div class="border border-gray-100 rounded-lg overflow-hidden">
-                        <button onclick="toggleFaq('faq1')" class="w-full text-left font-bold text-gray-800 p-2.5 bg-gray-50 flex justify-between items-center focus:outline-none">
+                    <details class="group bg-gray-50 p-2.5 rounded-lg border border-gray-200">
+                        <summary class="font-bold text-gray-800 cursor-pointer flex justify-between items-center">
                             <span>Q1: How can I secure my iPhone 18 online booking?</span>
-                            <span id="icon1" class="text-blue-600 font-bold">+</span>
-                        </button>
-                        <div id="faq1" class="hidden p-2.5 text-gray-600 bg-white border-t border-gray-100">
-                            You can register and complete your iPhone 18 online booking securely through our verified Telegram channel notifications to get early access and special launch discounts.
-                        </div>
-                    </div>
+                            <span class="text-blue-600 group-open:rotate-180 transition">▼</span>
+                        </summary>
+                        <p class="text-gray-600 mt-2 pt-2 border-t border-gray-200">You can register and complete your iPhone 18 online booking securely through our verified Telegram channel notifications to get early access and special launch discounts.</p>
+                    </details>
 
                     <!-- FAQ 2 -->
-                    <div class="border border-gray-100 rounded-lg overflow-hidden">
-                        <button onclick="toggleFaq('faq2')" class="w-full text-left font-bold text-gray-800 p-2.5 bg-gray-50 flex justify-between items-center focus:outline-none">
+                    <details class="group bg-gray-50 p-2.5 rounded-lg border border-gray-200">
+                        <summary class="font-bold text-gray-800 cursor-pointer flex justify-between items-center">
                             <span>Q2: What are iPhone loot deals and price glitches?</span>
-                            <span id="icon2" class="text-blue-600 font-bold">+</span>
-                        </button>
-                        <div id="faq2" class="hidden p-2.5 text-gray-600 bg-white border-t border-gray-100">
-                            iPhone loot deals refer to massive flash sale price drops and inventory pricing glitches on premium models like iPhone 15, 16, and 17, shared instantly via our alerts.
-                        </div>
-                    </div>
+                            <span class="text-blue-600 group-open:rotate-180 transition">▼</span>
+                        </summary>
+                        <p class="text-gray-600 mt-2 pt-2 border-t border-gray-200">iPhone loot deals refer to massive flash sale price drops and inventory pricing glitches on premium models like iPhone 15, 16, and 17, shared instantly via our alerts.</p>
+                    </details>
 
                     <!-- FAQ 3 -->
-                    <div class="border border-gray-100 rounded-lg overflow-hidden">
-                        <button onclick="toggleFaq('faq3')" class="w-full text-left font-bold text-gray-800 p-2.5 bg-gray-50 flex justify-between items-center focus:outline-none">
+                    <details class="group bg-gray-50 p-2.5 rounded-lg border border-gray-200">
+                        <summary class="font-bold text-gray-800 cursor-pointer flex justify-between items-center">
                             <span>Q3: How do I get instant notifications for stock updates?</span>
-                            <span id="icon3" class="text-blue-600 font-bold">+</span>
-                        </button>
-                        <div id="faq3" class="hidden p-2.5 text-gray-600 bg-white border-t border-gray-100">
-                            Join our official Telegram community linked above to receive real-time alerts milliseconds before stocks sell out during major e-commerce sales.
-                        </div>
-                    </div>
+                            <span class="text-blue-600 group-open:rotate-180 transition">▼</span>
+                        </summary>
+                        <p class="text-gray-600 mt-2 pt-2 border-t border-gray-200">Join our official Telegram community linked above to receive real-time alerts milliseconds before stocks sell out during major e-commerce sales.</p>
+                    </details>
+
+                    <!-- FAQ 4 -->
+                    <details class="group bg-gray-50 p-2.5 rounded-lg border border-gray-200">
+                        <summary class="font-bold text-gray-800 cursor-pointer flex justify-between items-center">
+                            <span>Q4: Are the discounted iPhone prices genuine and safe?</span>
+                            <span class="text-blue-600 group-open:rotate-180 transition">▼</span>
+                        </summary>
+                        <p class="text-gray-600 mt-2 pt-2 border-t border-gray-200">Yes, all deals point directly to official e-commerce sales and lightning deals where prices drop temporarily due to bank offers or inventory clearance glitches.</p>
+                    </details>
+
+                    <!-- FAQ 5 -->
+                    <details class="group bg-gray-50 p-2.5 rounded-lg border border-gray-200">
+                        <summary class="font-bold text-gray-800 cursor-pointer flex justify-between items-center">
+                            <span>Q5: When will iPhone 18 pre-orders officially ship?</span>
+                            <span class="text-blue-600 group-open:rotate-180 transition">▼</span>
+                        </summary>
+                        <p class="text-gray-600 mt-2 pt-2 border-t border-gray-200">Pre-order delivery timelines and shipping schedules for iPhone 18 online booking will be directly updated in our Telegram channel as soon as official dates are announced.</p>
+                    </details>
+
+                    <!-- FAQ 6 -->
+                    <details class="group bg-gray-50 p-2.5 rounded-lg border border-gray-200">
+                        <summary class="font-bold text-gray-800 cursor-pointer flex justify-between items-center">
+                            <span>Q6: How can I contact support for booking queries?</span>
+                            <span class="text-blue-600 group-open:rotate-180 transition">▼</span>
+                        </summary>
+                        <p class="text-gray-600 mt-2 pt-2 border-t border-gray-200">You can reach out to our team anytime by clicking the 'Contact Us' link in the footer which connects directly to our official support email.</p>
+                    </details>
                 </div>
             </section>
 
@@ -251,25 +272,13 @@
         </div>
     </div>
 
-    <!-- JavaScript for Modals & Interactive Accordion FAQs -->
+    <!-- JavaScript for Modal Popup Control -->
     <script>
         function openModal(modalId) {
             document.getElementById(modalId).classList.remove('hidden');
         }
         function closeModal(modalId) {
             document.getElementById(modalId).classList.add('hidden');
-        }
-
-        function toggleFaq(faqId) {
-            const content = document.getElementById(faqId);
-            const icon = document.getElementById('icon' + faqId.replace('faq', ''));
-            if (content.classList.contains('hidden')) {
-                content.classList.remove('hidden');
-                icon.innerText = '-';
-            } else {
-                content.classList.add('hidden');
-                icon.innerText = '+';
-            }
         }
     </script>
 
