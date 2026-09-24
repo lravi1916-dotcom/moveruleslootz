@@ -214,9 +214,17 @@
                     </div>
                 </section>
 
-                <!-- Connect With Creator Card (Placed right after FAQs) -->
+                <!-- ABOUT THE PLATFORM CARD -->
+                <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center space-y-2 mb-4">
+                    <span class="inline-block bg-pink-100 text-pink-600 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">About The Platform</span>
+                    <p class="text-xs text-gray-600 leading-relaxed">
+                        <strong>MoveRules Loot</strong> is an ultra-fast, independent online shopping utility designed to preview and secure verified pre-orders and flash sale price drops with ease. Built with high performance standards by <strong>The Pavi Studio</strong>, ensuring complete reliability with no hidden credentials required.
+                    </p>
+                </div>
+
+                <!-- CONNECT WITH CREATOR CARD -->
                 <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-center space-y-3 mb-6">
-                    <h3 class="text-xs font-bold uppercase tracking-wider text-gray-400">Connect With Creator</h3>
+                    <span class="inline-block bg-gray-100 text-gray-600 text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider">Connect With Creator</span>
                     <div>
                         <p class="text-sm font-bold text-gray-900">The Pavi Studio</p>
                         <p class="text-[11px] text-gray-500">Creative Design & Tech Labs</p>
@@ -228,26 +236,10 @@
                     </div>
                 </div>
 
-            </div>
-
-            <!-- VIEW 2: E-COMMERCE PRODUCT DETAILS VIEW -->
-            <div id="productDetailView" class="hidden bg-white p-4 rounded-2xl shadow-sm border border-gray-100 space-y-4">
-                <button onclick="showListView()" class="inline-flex items-center text-xs font-bold text-blue-600 hover:underline mb-2">
-                    ← Back to Deals
-                </button>
-
-                <div class="relative h-64 bg-gray-100 rounded-xl p-2 flex items-center justify-center">
-                    <img id="detailImg" src="" class="max-h-full object-contain">
-                    <span class="absolute top-3 right-3 bg-red-600 text-white text-[10px] font-bold px-2 py-1 rounded-full shadow">Verified Stock</span>
-                </div>
-
-                <div>
-                    <h2 id="detailTitle" class="text-lg font-bold text-gray-900 mb-1"></h2>
-                    <div class="flex items-baseline space-x-2 mb-3">
-                        <span id="detailPrice" class="text-xl font-bold text-green-600"></span>
-                        <span id="detailOriginalPrice" class="text-xs text-gray-400 line-through"></span>
-                        <span class="bg-green-100 text-green-800 text-[10px] font-bold px-2 py-0.5 rounded">In Stock</span>
-                    </div>
-                </div>
-
-                <div class="border-t border-gray-100 pt-3 
+                <!-- POLICY LINKS (Exactly like reference) -->
+                <div class="flex flex-wrap justify-center items-center gap-3 text-xs text-gray-600 font-medium mb-4">
+                    <button onclick="openModal('aboutModal')" class="hover:underline">About Us</button>
+                    <span>•</span>
+                    <a href="mailto:pavanibevara045@gmail.com" class="hover:underline">Contact</a>
+                    <span>•</span>
+                    <button onclick="openModal('privacyModal')" class="hover:underline">Privacy Polic
