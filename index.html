@@ -15,7 +15,7 @@
         <!-- Header -->
         <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-4 px-4 text-center shadow-md">
             <h1 class="text-2xl font-bold tracking-wider">MoveRules Loot</h1>
-            <p class="text-xs text-blue-100 mt-1">iPhone 18 Online Booking & Loot Deals</p>
+            <p class="text-xs text-blue-100 mt-1">iPhone 18 Online Booking & E-Commerce Loot Deals</p>
         </header>
 
         <main class="max-w-xl mx-auto p-3">
@@ -34,253 +34,216 @@
                 </div>
             </a>
 
-            <!-- Section 1: iPhone 18 Pro Online Booking -->
-            <div class="flex items-center justify-between mb-3">
-                <h2 class="text-base font-bold text-gray-800">🔥 iPhone 18 Pro Online Booking</h2>
-                <span class="text-[10px] text-red-500 font-semibold animate-pulse">● Pre-Order Live</span>
-            </div>
-
-            <div class="grid grid-cols-2 gap-3 mb-6">
+            <!-- VIEW 1: PRODUCTS LIST VIEW -->
+            <div id="productListView">
                 
-                <!-- iPhone 18 Pro - Color 1 -->
-                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between">
-                    <div>
-                        <div class="relative h-36 bg-gray-100 p-1 flex items-center justify-center">
-                            <img src="iphone18pro.jpg" class="max-h-full object-contain">
-                            <span class="absolute top-1 right-1 bg-red-600 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full shadow">Booking Open</span>
-                        </div>
-                        <div class="p-2.5">
-                            <h3 class="text-xs font-semibold text-gray-900 line-clamp-2 mb-1">Apple iPhone 18 Pro (Titanium Black)</h3>
-                            <div class="flex items-baseline space-x-1.5 mb-2">
-                                <span class="text-sm font-bold text-green-600">₹64,999</span>
-                                <span class="text-[10px] text-gray-400 line-through">₹1,29,900</span>
+                <!-- Section 1: iPhone 18 Pro Online Booking -->
+                <div class="flex items-center justify-between mb-3">
+                    <h2 class="text-base font-bold text-gray-800">🔥 iPhone 18 Pro Online Booking</h2>
+                    <span class="text-[10px] text-red-500 font-semibold animate-pulse">● Pre-Order Live</span>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3 mb-6">
+                    <!-- iPhone 18 Pro - Color 1 -->
+                    <div onclick="showProductDetails('iPhone 18 Pro (Titanium Black)', 'iphone18pro.jpg', '₹64,999', '₹1,29,900', 'Apple iPhone 18 Pro featuring the revolutionary A20 Bionic chip, upgraded 48MP triple-lens camera system, solid-state haptic buttons, and enhanced titanium chassis finish in Titanium Black. Official pre-order booking opens exclusively through our verified channels.')" class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between cursor-pointer hover:shadow-md transition">
+                        <div>
+                            <div class="relative h-36 bg-gray-100 p-1 flex items-center justify-center">
+                                <img src="iphone18pro.jpg" class="max-h-full object-contain">
+                                <span class="absolute top-1 right-1 bg-red-600 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full shadow">Booking Open</span>
+                            </div>
+                            <div class="p-2.5">
+                                <h3 class="text-xs font-semibold text-gray-900 line-clamp-2 mb-1">Apple iPhone 18 Pro (Titanium Black)</h3>
+                                <div class="flex items-baseline space-x-1.5 mb-2">
+                                    <span class="text-sm font-bold text-green-600">₹64,999</span>
+                                    <span class="text-[10px] text-gray-400 line-through">₹1,29,900</span>
+                                </div>
                             </div>
                         </div>
+                        <div class="p-2.5 pt-0">
+                            <button class="block w-full bg-blue-600 text-white text-center py-2 rounded-lg font-medium text-xs shadow-sm">View Details 🚀</button>
+                        </div>
                     </div>
-                    <div class="p-2.5 pt-0">
-                        <a href="https://t.me/+tagpEY02BSthMjA1" target="_blank" class="block w-full bg-blue-600 text-white text-center py-2 rounded-lg font-medium text-xs shadow-sm">Book Now 🚀</a>
+
+                    <!-- iPhone 18 Pro - Color 2 -->
+                    <div onclick="showProductDetails('iPhone 18 Pro (Cosmic Silver)', 'iphone18pro1.jpg', '₹64,999', '₹1,29,900', 'Apple iPhone 18 Pro in stunning Cosmic Silver. Equipped with next-gen OLED display technology, superior battery optimization, and extreme performance cores. Secure your booking slot instantly.')" class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between cursor-pointer hover:shadow-md transition">
+                        <div>
+                            <div class="relative h-36 bg-gray-100 p-1 flex items-center justify-center">
+                                <img src="iphone18pro1.jpg" class="max-h-full object-contain">
+                                <span class="absolute top-1 right-1 bg-red-600 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full shadow">Booking Open</span>
+                            </div>
+                            <div class="p-2.5">
+                                <h3 class="text-xs font-semibold text-gray-900 line-clamp-2 mb-1">Apple iPhone 18 Pro (Cosmic Silver)</h3>
+                                <div class="flex items-baseline space-x-1.5 mb-2">
+                                    <span class="text-sm font-bold text-green-600">₹64,999</span>
+                                    <span class="text-[10px] text-gray-400 line-through">₹1,29,900</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2.5 pt-0">
+                            <button class="block w-full bg-blue-600 text-white text-center py-2 rounded-lg font-medium text-xs shadow-sm">View Details 🚀</button>
+                        </div>
                     </div>
                 </div>
 
-                <!-- iPhone 18 Pro - Color 2 -->
-                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between">
-                    <div>
-                        <div class="relative h-36 bg-gray-100 p-1 flex items-center justify-center">
-                            <img src="iphone18pro1.jpg" class="max-h-full object-contain">
-                            <span class="absolute top-1 right-1 bg-red-600 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full shadow">Booking Open</span>
+                <!-- Section 2: iPhone 15, 16, 17 Loot Deals -->
+                <div class="flex items-center justify-between mb-3">
+                    <h2 class="text-base font-bold text-gray-800">⚡ Mega Loot Deals (15, 16, 17)</h2>
+                    <span class="text-[10px] text-green-600 font-semibold">● Stock Available</span>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3 mb-6">
+                    <!-- iPhone 15 -->
+                    <div onclick="showProductDetails('Apple iPhone 15 (128 GB) - Black', 'iphone15.jpg', '₹34,999', '₹79,900', 'Apple iPhone 15 with Dynamic Island, 48MP main camera, and USB-C connectivity. Verified price glitch and loot deal offer valid for limited stock.')" class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between cursor-pointer hover:shadow-md transition">
+                        <div>
+                            <div class="relative h-36 bg-gray-100 p-1 flex items-center justify-center">
+                                <img src="iphone15.jpg" class="max-h-full object-contain">
+                                <span class="absolute top-1 right-1 bg-red-600 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full shadow">Loot Price</span>
+                            </div>
+                            <div class="p-2.5">
+                                <h3 class="text-xs font-semibold text-gray-900 line-clamp-2 mb-1">Apple iPhone 15 (128 GB) - Black</h3>
+                                <div class="flex items-baseline space-x-1.5 mb-2">
+                                    <span class="text-sm font-bold text-green-600">₹34,999</span>
+                                    <span class="text-[10px] text-gray-400 line-through">₹79,900</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="p-2.5">
-                            <h3 class="text-xs font-semibold text-gray-900 line-clamp-2 mb-1">Apple iPhone 18 Pro (Cosmic Silver)</h3>
-                            <div class="flex items-baseline space-x-1.5 mb-2">
-                                <span class="text-sm font-bold text-green-600">₹64,999</span>
-                                <span class="text-[10px] text-gray-400 line-through">₹1,29,900</span>
+                        <div class="p-2.5 pt-0">
+                            <button class="block w-full bg-blue-600 text-white text-center py-2 rounded-lg font-medium text-xs shadow-sm">View Details 🚀</button>
+                        </div>
+                    </div>
+
+                    <!-- iPhone 16 -->
+                    <div onclick="showProductDetails('Apple iPhone 16 (128 GB) - White', 'iphone16.jpg', '₹39,999', '₹79,900', 'Apple iPhone 16 featuring Apple Intelligence support, Camera Control button, and powerful A18 chip. Grab this loot deal at an unbelievable discounted price.')" class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between cursor-pointer hover:shadow-md transition">
+                        <div>
+                            <div class="relative h-36 bg-gray-100 p-1 flex items-center justify-center">
+                                <img src="iphone16.jpg" class="max-h-full object-contain">
+                                <span class="absolute top-1 right-1 bg-red-600 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full shadow">Glitch Price</span>
+                            </div>
+                            <div class="p-2.5">
+                                <h3 class="text-xs font-semibold text-gray-900 line-clamp-2 mb-1">Apple iPhone 16 (128 GB) - White</h3>
+                                <div class="flex items-baseline space-x-1.5 mb-2">
+                                    <span class="text-sm font-bold text-green-600">₹39,999</span>
+                                    <span class="text-[10px] text-gray-400 line-through">₹79,900</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2.5 pt-0">
+                            <button class="block w-full bg-blue-600 text-white text-center py-2 rounded-lg font-medium text-xs shadow-sm">View Details 🚀</button>
+                        </div>
+                    </div>
+
+                    <!-- iPhone 17 -->
+                    <div onclick="showProductDetails('Apple iPhone 17 (256 GB) - Special Edition', 'iphone17.jpg', '₹54,999', '₹89,900', 'Special Edition Apple iPhone 17 with massive 256GB storage, advanced thermal cooling, and pro-grade display refresh rates. Limited inventory available.')" class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between col-span-2 cursor-pointer hover:shadow-md transition">
+                        <div class="flex">
+                            <div class="relative w-1/2 h-36 bg-gray-100 p-1 flex items-center justify-center">
+                                <img src="iphone17.jpg" class="max-h-full object-contain">
+                                <span class="absolute top-1 right-1 bg-red-600 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full shadow">Biggest Loot</span>
+                            </div>
+                            <div class="w-1/2 p-3 flex flex-col justify-center">
+                                <h3 class="text-xs font-semibold text-gray-900 mb-1">Apple iPhone 17 (256 GB) - Special Edition</h3>
+                                <div class="flex items-baseline space-x-2 mb-2">
+                                    <span class="text-sm font-bold text-green-600">₹54,999</span>
+                                    <span class="text-[10px] text-gray-400 line-through">₹89,900</span>
+                                </div>
+                                <button class="block w-full bg-blue-600 text-white text-center py-2 rounded-lg font-medium text-xs shadow-sm">View Details 🚀</button>
                             </div>
                         </div>
                     </div>
-                    <div class="p-2.5 pt-0">
-                        <a href="https://t.me/+tagpEY02BSthMjA1" target="_blank" class="block w-full bg-blue-600 text-white text-center py-2 rounded-lg font-medium text-xs shadow-sm">Book Now 🚀</a>
-                    </div>
                 </div>
+
+                <!-- SEO Articles Section for AdSense & Google Ranking -->
+                <section class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-xs text-gray-700 space-y-3 mb-6">
+                    <h3 class="font-bold text-gray-900 text-sm pb-1 border-b border-gray-100">Latest Apple & iPhone 18 Pre-Order Insights</h3>
+                    <article class="space-y-1">
+                        <h4 class="font-bold text-gray-800">Everything You Need to Know About iPhone 18 Online Booking</h4>
+                        <p class="text-gray-600">The anticipation for the upcoming flagship release is at an all-time high. Consumers looking for early access and verified booking portals can secure their units through our dedicated alert channel. We track inventory drops and flash pre-order windows in real-time to ensure you never miss out.</p>
+                    </article>
+                    <article class="space-y-1 pt-2">
+                        <h4 class="font-bold text-gray-800">How E-Commerce Price Glitches and Loot Deals Work</h4>
+                        <p class="text-gray-600">Price glitches on models like iPhone 15, 16, and 17 occur due to automated algorithmic pricing adjustments or festive sale overloads. MoveRules Loot monitors these fluctuations 24/7 and instantly redirects buyers to secure checkout opportunities.</p>
+                    </article>
+                </section>
+
+                <!-- Professional Click-to-Expand FAQs Section -->
+                <section class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-xs text-gray-700 space-y-3 mb-6">
+                    <h3 class="font-bold text-gray-900 text-sm pb-1 border-b border-gray-100">Frequently Asked Questions (FAQs)</h3>
+                    
+                    <div class="space-y-2">
+                        <details class="group bg-gray-50 p-2.5 rounded-lg border border-gray-200">
+                            <summary class="font-bold text-gray-800 cursor-pointer flex justify-between items-center">
+                                <span>Q1: How can I secure my iPhone 18 online booking?</span>
+                                <span class="text-blue-600 group-open:rotate-180 transition">▼</span>
+                            </summary>
+                            <p class="text-gray-600 mt-2 pt-2 border-t border-gray-200">You can register and complete your iPhone 18 online booking securely through our verified Telegram channel notifications to get early access and special launch discounts.</p>
+                        </details>
+
+                        <details class="group bg-gray-50 p-2.5 rounded-lg border border-gray-200">
+                            <summary class="font-bold text-gray-800 cursor-pointer flex justify-between items-center">
+                                <span>Q2: What are iPhone loot deals and price glitches?</span>
+                                <span class="text-blue-600 group-open:rotate-180 transition">▼</span>
+                            </summary>
+                            <p class="text-gray-600 mt-2 pt-2 border-t border-gray-200">iPhone loot deals refer to massive flash sale price drops and inventory pricing glitches on premium models like iPhone 15, 16, and 17, shared instantly via our alerts.</p>
+                        </details>
+
+                        <details class="group bg-gray-50 p-2.5 rounded-lg border border-gray-200">
+                            <summary class="font-bold text-gray-800 cursor-pointer flex justify-between items-center">
+                                <span>Q3: How do I get instant notifications for stock updates?</span>
+                                <span class="text-blue-600 group-open:rotate-180 transition">▼</span>
+                            </summary>
+                            <p class="text-gray-600 mt-2 pt-2 border-t border-gray-200">Join our official Telegram community linked above to receive real-time alerts milliseconds before stocks sell out during major e-commerce sales.</p>
+                        </details>
+
+                        <details class="group bg-gray-50 p-2.5 rounded-lg border border-gray-200">
+                            <summary class="font-bold text-gray-800 cursor-pointer flex justify-between items-center">
+                                <span>Q4: Are the discounted iPhone prices genuine and safe?</span>
+                                <span class="text-blue-600 group-open:rotate-180 transition">▼</span>
+                            </summary>
+                            <p class="text-gray-600 mt-2 pt-2 border-t border-gray-200">Yes, all deals point directly to official e-commerce sales and lightning deals where prices drop temporarily due to bank offers or inventory clearance glitches.</p>
+                        </details>
+
+                        <details class="group bg-gray-50 p-2.5 rounded-lg border border-gray-200">
+                            <summary class="font-bold text-gray-800 cursor-pointer flex justify-between items-center">
+                                <span>Q5: When will iPhone 18 pre-orders officially ship?</span>
+                                <span class="text-blue-600 group-open:rotate-180 transition">▼</span>
+                            </summary>
+                            <p class="text-gray-600 mt-2 pt-2 border-t border-gray-200">Pre-order delivery timelines and shipping schedules for iPhone 18 online booking will be directly updated in our Telegram channel as soon as official dates are announced.</p>
+                        </details>
+
+                        <details class="group bg-gray-50 p-2.5 rounded-lg border border-gray-200">
+                            <summary class="font-bold text-gray-800 cursor-pointer flex justify-between items-center">
+                                <span>Q6: How can I contact support for booking queries?</span>
+                                <span class="text-blue-600 group-open:rotate-180 transition">▼</span>
+                            </summary>
+                            <p class="text-gray-600 mt-2 pt-2 border-t border-gray-200">You can reach out to our team anytime by clicking the 'Contact Us' link in the footer which connects directly to our official support email.</p>
+                        </details>
+                    </div>
+                </section>
 
             </div>
 
-            <!-- Section 2: iPhone 15, 16, 17 Loot Deals -->
-            <div class="flex items-center justify-between mb-3">
-                <h2 class="text-base font-bold text-gray-800">⚡ Mega Loot Deals (15, 16, 17)</h2>
-                <span class="text-[10px] text-green-600 font-semibold">● Stock Available</span>
-            </div>
+            <!-- VIEW 2: E-COMMERCE PRODUCT DETAILS VIEW (Hidden by default) -->
+            <div id="productDetailView" class="hidden bg-white p-4 rounded-2xl shadow-sm border border-gray-100 space-y-4">
+                <button onclick="showListView()" class="inline-flex items-center text-xs font-bold text-blue-600 hover:underline mb-2">
+                    ← Back to Deals
+                </button>
 
-            <div class="grid grid-cols-2 gap-3 mb-6">
-                
-                <!-- iPhone 15 -->
-                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between">
-                    <div>
-                        <div class="relative h-36 bg-gray-100 p-1 flex items-center justify-center">
-                            <img src="iphone15.jpg" class="max-h-full object-contain">
-                            <span class="absolute top-1 right-1 bg-red-600 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full shadow">Loot Price</span>
-                        </div>
-                        <div class="p-2.5">
-                            <h3 class="text-xs font-semibold text-gray-900 line-clamp-2 mb-1">Apple iPhone 15 (128 GB) - Black</h3>
-                            <div class="flex items-baseline space-x-1.5 mb-2">
-                                <span class="text-sm font-bold text-green-600">₹34,999</span>
-                                <span class="text-[10px] text-gray-400 line-through">₹79,900</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-2.5 pt-0">
-                        <a href="https://t.me/+tagpEY02BSthMjA1" target="_blank" class="block w-full bg-blue-600 text-white text-center py-2 rounded-lg font-medium text-xs shadow-sm">Grab Deal 🚀</a>
+                <div class="relative h-64 bg-gray-100 rounded-xl p-2 flex items-center justify-center">
+                    <img id="detailImg" src="" class="max-h-full object-contain">
+                    <span class="absolute top-3 right-3 bg-red-600 text-white text-[10px] font-bold px-2 py-1 rounded-full shadow">Verified Stock</span>
+                </div>
+
+                <div>
+                    <h2 id="detailTitle" class="text-lg font-bold text-gray-900 mb-1"></h2>
+                    <div class="flex items-baseline space-x-2 mb-3">
+                        <span id="detailPrice" class="text-xl font-bold text-green-600"></span>
+                        <span id="detailOriginalPrice" class="text-xs text-gray-400 line-through"></span>
+                        <span class="bg-green-100 text-green-800 text-[10px] font-bold px-2 py-0.5 rounded">In Stock</span>
                     </div>
                 </div>
 
-                <!-- iPhone 16 -->
-                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between">
-                    <div>
-                        <div class="relative h-36 bg-gray-100 p-1 flex items-center justify-center">
-                            <img src="iphone16.jpg" class="max-h-full object-contain">
-                            <span class="absolute top-1 right-1 bg-red-600 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full shadow">Glitch Price</span>
-                        </div>
-                        <div class="p-2.5">
-                            <h3 class="text-xs font-semibold text-gray-900 line-clamp-2 mb-1">Apple iPhone 16 (128 GB) - White</h3>
-                            <div class="flex items-baseline space-x-1.5 mb-2">
-                                <span class="text-sm font-bold text-green-600">₹39,999</span>
-                                <span class="text-[10px] text-gray-400 line-through">₹79,900</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-2.5 pt-0">
-                        <a href="https://t.me/+tagpEY02BSthMjA1" target="_blank" class="block w-full bg-blue-600 text-white text-center py-2 rounded-lg font-medium text-xs shadow-sm">Grab Deal 🚀</a>
-                    </div>
-                </div>
-
-                <!-- iPhone 17 -->
-                <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden flex flex-col justify-between col-span-2">
-                    <div class="flex">
-                        <div class="relative w-1/2 h-36 bg-gray-100 p-1 flex items-center justify-center">
-                            <img src="iphone17.jpg" class="max-h-full object-contain">
-                            <span class="absolute top-1 right-1 bg-red-600 text-white text-[9px] font-bold px-1.5 py-0.5 rounded-full shadow">Biggest Loot</span>
-                        </div>
-                        <div class="w-1/2 p-3 flex flex-col justify-center">
-                            <h3 class="text-xs font-semibold text-gray-900 mb-1">Apple iPhone 17 (256 GB) - Special Edition</h3>
-                            <div class="flex items-baseline space-x-2 mb-2">
-                                <span class="text-sm font-bold text-green-600">₹54,999</span>
-                                <span class="text-[10px] text-gray-400 line-through">₹89,900</span>
-                            </div>
-                            <a href="https://t.me/+tagpEY02BSthMjA1" target="_blank" class="block w-full bg-blue-600 text-white text-center py-2 rounded-lg font-medium text-xs shadow-sm">Grab Deal Now 🚀</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Professional Click-to-Expand FAQs Section (6-7 FAQs) -->
-            <section class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-xs text-gray-700 space-y-3 mb-6">
-                <h3 class="font-bold text-gray-900 text-sm pb-1 border-b border-gray-100">Frequently Asked Questions (FAQs)</h3>
-                
-                <div class="space-y-2">
-                    <!-- FAQ 1 -->
-                    <details class="group bg-gray-50 p-2.5 rounded-lg border border-gray-200">
-                        <summary class="font-bold text-gray-800 cursor-pointer flex justify-between items-center">
-                            <span>Q1: How can I secure my iPhone 18 online booking?</span>
-                            <span class="text-blue-600 group-open:rotate-180 transition">▼</span>
-                        </summary>
-                        <p class="text-gray-600 mt-2 pt-2 border-t border-gray-200">You can register and complete your iPhone 18 online booking securely through our verified Telegram channel notifications to get early access and special launch discounts.</p>
-                    </details>
-
-                    <!-- FAQ 2 -->
-                    <details class="group bg-gray-50 p-2.5 rounded-lg border border-gray-200">
-                        <summary class="font-bold text-gray-800 cursor-pointer flex justify-between items-center">
-                            <span>Q2: What are iPhone loot deals and price glitches?</span>
-                            <span class="text-blue-600 group-open:rotate-180 transition">▼</span>
-                        </summary>
-                        <p class="text-gray-600 mt-2 pt-2 border-t border-gray-200">iPhone loot deals refer to massive flash sale price drops and inventory pricing glitches on premium models like iPhone 15, 16, and 17, shared instantly via our alerts.</p>
-                    </details>
-
-                    <!-- FAQ 3 -->
-                    <details class="group bg-gray-50 p-2.5 rounded-lg border border-gray-200">
-                        <summary class="font-bold text-gray-800 cursor-pointer flex justify-between items-center">
-                            <span>Q3: How do I get instant notifications for stock updates?</span>
-                            <span class="text-blue-600 group-open:rotate-180 transition">▼</span>
-                        </summary>
-                        <p class="text-gray-600 mt-2 pt-2 border-t border-gray-200">Join our official Telegram community linked above to receive real-time alerts milliseconds before stocks sell out during major e-commerce sales.</p>
-                    </details>
-
-                    <!-- FAQ 4 -->
-                    <details class="group bg-gray-50 p-2.5 rounded-lg border border-gray-200">
-                        <summary class="font-bold text-gray-800 cursor-pointer flex justify-between items-center">
-                            <span>Q4: Are the discounted iPhone prices genuine and safe?</span>
-                            <span class="text-blue-600 group-open:rotate-180 transition">▼</span>
-                        </summary>
-                        <p class="text-gray-600 mt-2 pt-2 border-t border-gray-200">Yes, all deals point directly to official e-commerce sales and lightning deals where prices drop temporarily due to bank offers or inventory clearance glitches.</p>
-                    </details>
-
-                    <!-- FAQ 5 -->
-                    <details class="group bg-gray-50 p-2.5 rounded-lg border border-gray-200">
-                        <summary class="font-bold text-gray-800 cursor-pointer flex justify-between items-center">
-                            <span>Q5: When will iPhone 18 pre-orders officially ship?</span>
-                            <span class="text-blue-600 group-open:rotate-180 transition">▼</span>
-                        </summary>
-                        <p class="text-gray-600 mt-2 pt-2 border-t border-gray-200">Pre-order delivery timelines and shipping schedules for iPhone 18 online booking will be directly updated in our Telegram channel as soon as official dates are announced.</p>
-                    </details>
-
-                    <!-- FAQ 6 -->
-                    <details class="group bg-gray-50 p-2.5 rounded-lg border border-gray-200">
-                        <summary class="font-bold text-gray-800 cursor-pointer flex justify-between items-center">
-                            <span>Q6: How can I contact support for booking queries?</span>
-                            <span class="text-blue-600 group-open:rotate-180 transition">▼</span>
-                        </summary>
-                        <p class="text-gray-600 mt-2 pt-2 border-t border-gray-200">You can reach out to our team anytime by clicking the 'Contact Us' link in the footer which connects directly to our official support email.</p>
-                    </details>
-                </div>
-            </section>
-
-        </main>
-    </div>
-
-    <!-- Footer with AdSense Compliance Popup Modals -->
-    <footer class="bg-gray-900 text-gray-400 py-6 px-4 text-xs">
-        <div class="max-w-xl mx-auto space-y-3 text-center">
-            
-            <!-- Quick Links -->
-            <div class="flex flex-wrap justify-center gap-4 text-gray-300 font-medium text-[11px]">
-                <button onclick="openModal('aboutModal')" class="hover:underline focus:outline-none">About Us</button>
-                <a href="mailto:pavanibevara045@gmail.com" class="hover:underline">Contact Us</a>
-                <button onclick="openModal('privacyModal')" class="hover:underline focus:outline-none">Privacy Policy</button>
-                <button onclick="openModal('termsModal')" class="hover:underline focus:outline-none">Terms & Conditions</button>
-                <button onclick="openModal('copyrightModal')" class="hover:underline focus:outline-none">Copyright Disclaimer</button>
-            </div>
-
-            <p class="text-[10px] text-gray-500 leading-relaxed">
-                Disclaimer: MoveRules Loot platform does not host any copyrighted media files. All product images, trademarks, and brand names belong to their respective owners. Deals and prices are subject to change without prior notice.
-            </p>
-
-            <p class="text-[11px] text-gray-400 pt-2 border-t border-gray-800">
-                © 2026 MoveRulesLoot.in • All Rights Reserved
-            </p>
-        </div>
-    </footer>
-
-    <!-- Modals for Policies -->
-    <div id="aboutModal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center p-4 z-50">
-        <div class="bg-white text-gray-800 p-5 rounded-2xl max-w-sm w-full space-y-3 shadow-xl text-left text-xs">
-            <h3 class="font-bold text-sm text-gray-900">About Us</h3>
-            <p>Welcome to MoveRules Loot, your ultimate destination for verified online shopping loot deals, price glitch alerts, and exclusive tech discounts. We also provide early-bird pre-orders such as iPhone 18 online booking.</p>
-            <button onclick="closeModal('aboutModal')" class="w-full bg-blue-600 text-white py-2 rounded-xl font-medium mt-2">Close</button>
-        </div>
-    </div>
-
-    <div id="privacyModal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center p-4 z-50">
-        <div class="bg-white text-gray-800 p-5 rounded-2xl max-w-sm w-full space-y-3 shadow-xl text-left text-xs">
-            <h3 class="font-bold text-sm text-gray-900">Privacy Policy</h3>
-            <p>At MoveRules Loot, your privacy is our main priority. We use third-party advertising companies like Google AdSense to serve ads when you visit our website.</p>
-            <button onclick="closeModal('privacyModal')" class="w-full bg-blue-600 text-white py-2 rounded-xl font-medium mt-2">Close</button>
-        </div>
-    </div>
-
-    <div id="termsModal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center p-4 z-50">
-        <div class="bg-white text-gray-800 p-5 rounded-2xl max-w-sm w-full space-y-3 shadow-xl text-left text-xs">
-            <h3 class="font-bold text-sm text-gray-900">Terms & Conditions</h3>
-            <p>By accessing this website, you accept our terms and conditions. All deals and glitch prices are subject to stock availability from e-commerce platforms.</p>
-            <button onclick="closeModal('termsModal')" class="w-full bg-blue-600 text-white py-2 rounded-xl font-medium mt-2">Close</button>
-        </div>
-    </div>
-
-    <div id="copyrightModal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center p-4 z-50">
-        <div class="bg-white text-gray-800 p-5 rounded-2xl max-w-sm w-full space-y-3 shadow-xl text-left text-xs">
-            <h3 class="font-bold text-sm text-gray-900">Copyright Disclaimer</h3>
-            <p>MoveRules Loot respects intellectual property rights. All brand names and product images belong to their respective owners and are used for identification purposes only.</p>
-            <button onclick="closeModal('copyrightModal')" class="w-full bg-blue-600 text-white py-2 rounded-xl font-medium mt-2">Close</button>
-        </div>
-    </div>
-
-    <!-- JavaScript for Modal Popup Control -->
-    <script>
-        function openModal(modalId) {
-            document.getElementById(modalId).classList.remove('hidden');
-        }
-        function closeModal(modalId) {
-            document.getElementById(modalId).classList.add('hidden');
-        }
-    </script>
-
-</body>
-</html>
+                <div class="border-t border-gray-100 pt-3 space-y-2 text-xs text-gray-600">
+                    <h4 class="font-bold text-gray-800">Product Description & Specs:</h4>
+                    <p id="detailDesc"></p>
+                    <ul class="list-disc pl-4 space-y-1 pt-1 text-gray-500">
+                        <li>100% Genuine Brand Warranty Included</li>
+          
