@@ -223,7 +223,7 @@
                 </div>
 
                 <!-- CONNECT WITH CREATOR -->
-                <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 text-center space-y-3 mb-6">
+                <div class="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 text-center space-y-3 mb-4">
                     <span class="inline-block bg-gray-100 text-gray-500 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">Connect with creator</span>
                     <div>
                         <p class="text-sm font-bold text-gray-900">The Pavi Studio</p>
@@ -236,10 +236,7 @@
                     </div>
                 </div>
 
-                <!-- POLICY LINKS MODAL TRIGGERS -->
-                <div class="flex flex-wrap justify-center items-center gap-x-3 gap-y-2 text-xs text-gray-500 font-medium mb-4 px-2 text-center">
-                    <button onclick="openModal('aboutModal')" class="hover:underline">About Us</button>
-                    <span>•</span>
-                    <a href="mailto:pavanibevara045@gmail.com" class="hover:underline">Contact</a>
-                    <span>•</span>
-                    <button onclick="openMo
+                <!-- POLICY BUTTONS GRID (About Us, Contact, Privacy, Terms, DMCA) -->
+                <div class="grid grid-cols-2 gap-2 mb-4 px-1">
+                    <button onclick="openModal('aboutModal')" class="bg-white border border-gray-200 hover:bg-gray-50 text-gray-700 py-2 rounded-xl text-xs font-semibold shadow-sm transition">About Us</button>
+                    <button onclick="openModal('contactModal')" class="bg-white border border-gray-200 hover:bg-gray-50 text-gray-700 py-2 rounded-xl text
