@@ -18,7 +18,7 @@
         </header>
 
         <main class="max-w-xl mx-auto p-3">
-            
+
             <!-- Telegram Top Banner Box -->
             <a href="https://t.me/+tagpEY02BSthMjA1" target="_blank" class="block mb-5 bg-gradient-to-r from-sky-400 to-blue-500 text-white p-3 rounded-xl shadow-lg">
                 <div class="flex items-center justify-between">
@@ -35,7 +35,7 @@
 
             <!-- VIEW 1: PRODUCTS LIST VIEW -->
             <div id="productListView">
-                
+
                 <!-- Section 1: iPhone 18 Pro Online Booking -->
                 <div class="flex items-center justify-between mb-3">
                     <h2 class="text-base font-bold text-gray-800">🔥 iPhone 18 Pro Online Booking</h2>
@@ -162,7 +162,7 @@
                 <!-- Professional FAQs Section (6 FAQs) -->
                 <section class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-xs text-gray-700 space-y-3 mb-6">
                     <h3 class="font-bold text-gray-900 text-sm pb-1 border-b border-gray-100">Frequently Asked Questions (FAQs)</h3>
-                    
+
                     <div class="space-y-2">
                         <details class="group bg-gray-50 p-2.5 rounded-lg border border-gray-200">
                             <summary class="font-bold text-gray-800 cursor-pointer flex justify-between items-center">
@@ -236,7 +236,12 @@
                     </div>
                 </div>
 
-                <!-- PROFESSIONAL POLICY BUTTONS GRID (All 7 Buttons) -->
-                <div class="grid grid-cols-2 gap-2 mb-4 px-1">
-                    <button onclick="openModal('aboutModal')" class="bg-white border border-gray-200 hover:bg-gray-50 text-gray-700 py-2 rounded-xl text-xs font-semibold shadow-sm transition">About Us</button>
-                    <button onclick="openModal('contactModal')" class="bg-white border border-gray-200 hover:bg-gray-50 text-gray-700 py-2 rounded-xl text-xs font-semi
+            </div>
+
+            <!-- VIEW 2: PRODUCT DETAILS VIEW -->
+            <div id="productDetailView" class="hidden">
+                <button onclick="hideProductDetails()" class="text-xs font-semibold text-blue-600 mb-3">&larr; Back to Deals</button>
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden mb-4">
+                    <div class="bg-gray-100 h-64 flex items-center justify-center p-2">
+                        <img id="detailImage" src="" alt="" class="max-h-full object-contain">
+              
