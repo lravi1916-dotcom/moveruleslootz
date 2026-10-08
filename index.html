@@ -190,9 +190,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <!-- SEO Keyword Rich Articles Section for High Traffic -->
+                                    </div>
+                                                    <!-- SEO Keyword Rich Articles Section for High Traffic -->
                 <section class="bg-white p-4 rounded-xl shadow-sm border border-gray-100 text-xs text-gray-700 space-y-3 mb-6">
                     <h3 class="font-bold text-gray-900 text-sm pb-1 border-b border-gray-100">Movierulz - Download Latest HD Movies Online Free</h3>
                     <article class="space-y-1">
@@ -265,4 +264,142 @@
                 <!-- PROFESSIONAL POLICY BUTTONS GRID -->
                 <div class="grid grid-cols-2 gap-2 mb-4 px-1">
                     <button onclick="openModal('aboutModal')" class="bg-white border border-gray-200 hover:bg-gray-50 text-gray-700 py-2 rounded-xl text-xs font-semibold shadow-sm transition">About Us</button>
-                    <button onclick="openModal('contactModal')" class="bg-white border 
+                    <button onclick="openModal('contactModal')" class="bg-white border border-gray-200 hover:bg-gray-50 text-gray-700 py-2 rounded-xl text-xs font-semibold shadow-sm transition">Contact</button>
+                    <button onclick="openModal('privacyModal')" class="bg-white border border-gray-200 hover:bg-gray-50 text-gray-700 py-2 rounded-xl text-xs font-semibold shadow-sm transition">Privacy Policy</button>
+                    <button onclick="openModal('termsModal')" class="bg-white border border-gray-200 hover:bg-gray-50 text-gray-700 py-2 rounded-xl text-xs font-semibold shadow-sm transition">Terms</button>
+                    <button onclick="openModal('dmcaModal')" class="bg-white border border-gray-200 hover:bg-gray-50 text-gray-700 py-2 rounded-xl text-xs font-semibold shadow-sm transition">DMCA</button>
+                    <button onclick="openModal('disclaimerModal')" class="bg-white border border-gray-200 hover:bg-gray-50 text-gray-700 py-2 rounded-xl text-xs font-semibold shadow-sm transition">Disclaimer</button>
+                    <button onclick="openModal('copyrightModal')" class="bg-white border border-gray-200 hover:bg-gray-50 text-gray-700 py-2 rounded-xl text-xs font-semibold shadow-sm transition col-span-2">Copyright</button>
+                </div>
+
+                <!-- DISCLAIMER & COPYRIGHT -->
+                <div class="text-center text-[10px] text-gray-400 space-y-1 px-4 mb-6">
+                    <p>Disclaimer: MoveRules Loot does not host copyrighted files on its servers. All contents are provided by non-affiliated third parties.</p>
+                    <p>© 2026 MoveRules Loot by The Pavi Studio. All rights reserved.</p>
+                </div>
+
+            </div>
+
+            <!-- VIEW 2: E-COMMERCE PRODUCT DETAILS VIEW -->
+            <div id="productDetailView" class="hidden bg-white p-4 rounded-2xl shadow-sm border border-gray-100 space-y-4">
+                <button onclick="showListView()" class="inline-flex items-center text-xs font-bold text-blue-600 hover:underline mb-2">
+                    ← Back to Movies
+                </button>
+
+                <div class="relative h-64 bg-gray-100 rounded-xl p-2 flex items-center justify-center">
+                    <img id="detailImg" src="" class="max-h-full object-contain">
+                    <span class="absolute top-3 right-3 bg-red-600 text-white text-[10px] font-bold px-2 py-1 rounded-full shadow">HD Streaming</span>
+                </div>
+
+                <div>
+                    <h2 id="detailTitle" class="text-lg font-bold text-gray-900 mb-1"></h2>
+                    <div class="flex items-baseline space-x-2 mb-3">
+                        <span id="detailPrice" class="text-xl font-bold text-green-600"></span>
+                        <span id="detailOriginalPrice" class="text-xs text-gray-400 line-through"></span>
+                        <span class="bg-green-100 text-green-800 text-[10px] font-bold px-2 py-0.5 rounded">High Speed</span>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-100 pt-3 space-y-2 text-xs text-gray-600">
+                    <h4 class="font-bold text-gray-800">Movie Information & Download Links:</h4>
+                    <p id="detailDesc"></p>
+                </div>
+
+                <div class="pt-4">
+                    <a id="detailBuyBtn" href="https://t.me/+tagpEY02BSthMjA1" target="_blank" class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-3 rounded-xl font-bold text-sm shadow-lg transition">
+                        Download / Watch on Telegram 🚀
+                    </a>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Modals -->
+    <div id="aboutModal" class="fixed inset-0 bg-black bg-opacity-60 hidden flex items-center justify-center p-4 z-50">
+        <div class="bg-white text-gray-800 p-6 rounded-2xl max-w-md w-full space-y-3 shadow-2xl text-left text-xs max-h-[80vh] overflow-y-auto">
+            <h3 class="font-bold text-base text-gray-900 border-b pb-2">About Us</h3>
+            <p>Welcome to <strong>MoveRules Loot</strong>, your ultimate online destination for free HD movies, web series updates, and entertainment alerts.</p>
+            <button onclick="closeModal('aboutModal')" class="w-full bg-blue-600 text-white py-2.5 rounded-xl font-bold mt-3">Close</button>
+        </div>
+    </div>
+
+    <div id="contactModal" class="fixed inset-0 bg-black bg-opacity-60 hidden flex items-center justify-center p-4 z-50">
+        <div class="bg-white text-gray-800 p-6 rounded-2xl max-w-md w-full space-y-3 shadow-2xl text-left text-xs max-h-[80vh] overflow-y-auto">
+            <h3 class="font-bold text-base text-gray-900 border-b pb-2">Contact Us</h3>
+            <p>For inquiries or copyright requests, contact us at: <a href="mailto:pavanibevara045@gmail.com" class="text-blue-600 underline">pavanibevara045@gmail.com</a></p>
+            <button onclick="closeModal('contactModal')" class="w-full bg-blue-600 text-white py-2.5 rounded-xl font-bold mt-3">Close</button>
+        </div>
+    </div>
+
+    <div id="privacyModal" class="fixed inset-0 bg-black bg-opacity-60 hidden flex items-center justify-center p-4 z-50">
+        <div class="bg-white text-gray-800 p-6 rounded-2xl max-w-md w-full space-y-3 shadow-2xl text-left text-xs max-h-[80vh] overflow-y-auto">
+            <h3 class="font-bold text-base text-gray-900 border-b pb-2">Privacy Policy</h3>
+            <p>We respect your privacy and protect personal data in compliance with standard regulations.</p>
+            <button onclick="closeModal('privacyModal')" class="w-full bg-blue-600 text-white py-2.5 rounded-xl font-bold mt-3">Close</button>
+        </div>
+    </div>
+
+    <div id="termsModal" class="fixed inset-0 bg-black bg-opacity-60 hidden flex items-center justify-center p-4 z-50">
+        <div class="bg-white text-gray-800 p-6 rounded-2xl max-w-md w-full space-y-3 shadow-2xl text-left text-xs max-h-[80vh] overflow-y-auto">
+            <h3 class="font-bold text-base text-gray-900 border-b pb-2">Terms & Conditions</h3>
+            <p>By using MoveRules Loot, you agree to comply with our website policies and guidelines.</p>
+            <button onclick="closeModal('termsModal')" class="w-full bg-blue-600 text-white py-2.5 rounded-xl font-bold mt-3">Close</button>
+        </div>
+    </div>
+
+    <div id="dmcaModal" class="fixed inset-0 bg-black bg-opacity-60 hidden flex items-center justify-center p-4 z-50">
+        <div class="bg-white text-gray-800 p-6 rounded-2xl max-w-md w-full space-y-3 shadow-2xl text-left text-xs max-h-[80vh] overflow-y-auto">
+            <h3 class="font-bold text-base text-gray-900 border-b pb-2">DMCA Notice</h3>
+            <p>We comply with DMCA guidelines and remove infringing content upon valid notification.</p>
+            <button onclick="closeModal('dmcaModal')" class="w-full bg-blue-600 text-white py-2.5 rounded-xl font-bold mt-3">Close</button>
+        </div>
+    </div>
+
+    <div id="disclaimerModal" class="fixed inset-0 bg-black bg-opacity-60 hidden flex items-center justify-center p-4 z-50">
+        <div class="bg-white text-gray-800 p-6 rounded-2xl max-w-md w-full space-y-3 shadow-2xl text-left text-xs max-h-[80vh] overflow-y-auto">
+            <h3 class="font-bold text-base text-gray-900 border-b pb-2">Disclaimer</h3>
+            <p>MoveRules Loot does not promote piracy. All links are gathered from free public domains.</p>
+            <button onclick="closeModal('disclaimerModal')" class="w-full bg-blue-600 text-white py-2.5 rounded-xl font-bold mt-3">Close</button>
+        </div>
+    </div>
+
+    <div id="copyrightModal" class="fixed inset-0 bg-black bg-opacity-60 hidden flex items-center justify-center p-4 z-50">
+        <div class="bg-white text-gray-800 p-6 rounded-2xl max-w-md w-full space-y-3 shadow-2xl text-left text-xs max-h-[80vh] overflow-y-auto">
+            <h3 class="font-bold text-base text-gray-900 border-b pb-2">Copyright Notice</h3>
+            <p>© 2026 MoveRules Loot by The Pavi Studio. All rights reserved.</p>
+            <button onclick="closeModal('copyrightModal')" class="w-full bg-blue-600 text-white py-2.5 rounded-xl font-bold mt-3">Close</button>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        function showProductDetails(title, img, price, origPrice, desc) {
+            document.getElementById('productListView').classList.add('hidden');
+            document.getElementById('productDetailView').classList.remove('hidden');
+            
+            document.getElementById('detailTitle').innerText = title;
+            document.getElementById('detailImg').src = img;
+            document.getElementById('detailPrice').innerText = price;
+            document.getElementById('detailOriginalPrice').innerText = origPrice;
+            document.getElementById('detailDesc').innerText = desc;
+            
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function showListView() {
+            document.getElementById('productDetailView').classList.add('hidden');
+            document.getElementById('productListView').classList.remove('hidden');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function openModal(modalId) {
+            document.getElementById(modalId).classList.remove('hidden');
+        }
+        function closeModal(modalId) {
+            document.getElementById(modalId).classList.add('hidden');
+        }
+    </script>
+
+</body>
+</html>
